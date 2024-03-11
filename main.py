@@ -8,7 +8,8 @@ account_sid = "ACa3b7696505534de4059e02d2326f0ee8"
 auth_token = "ef000d968ecc5f8444b627e06a126bc5"
 
 # SMS API Info
-"""
+
+
 weather_params_Stratford = {
     "lat": 3.3700,
     "lon": -80.9822,
@@ -23,8 +24,8 @@ weather_params_Rock_River = {
     "cnt": 4,
     "appid": "b99d28e7ae96031250f2d043b9e88521"
 }
-
-response = requests.get(OMW_Endpoint, params=weather_params_Rock_River)
+"""
+response = requests.get(OMW_Endpoint, params=weather_params_Stratford)
 #print(response.status_code)
 response.raise_for_status()
 weather_data = response.json()
